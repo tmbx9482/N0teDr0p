@@ -1,0 +1,112 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: burlywood;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-repeat: no-repeat;
+}
+
+/*--- Navigation bar ---*/
+.navbar {
+  background: #000000;
+
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+  text-align: right;
+  margin: 0;
+  padding: 0px;
+}
+
+.nav-link:hover {
+  color: #8a2be2;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+
+}
+
+/*--- Index Page Backround ---*/
+
+.header {
+  background-image: url(NoteDrop.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+
+}
+
+/*--- Index Page ---*/
+
+.overlay {
+  position: static;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 58%;
+  bottom: 20%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+
+.description h1 {
+  color: #8a2be2;
+}
+
+.description p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.description button {
+  border: 3px solid #000;
+  background: #8a2be2;
+  border-radius: 0;
+  color: #fff;
+}
+
+.description button:hover {
+  border: 3px solid #fff;
+  background: #fff;
+  color: #000;
+}
+
+a.btn {
+  background: #8a2be2;
+  color: #000000;
+}
+
+
+/*--- Footer Section ---*/
+
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  background-color: black;
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+footer p {
+  margin-bottom: 0px;
+  color: blueviolet;
+}
