@@ -36,22 +36,20 @@
     <header>
     <h1>n0tedr0p</h1>
     <h4>tagline</h4>
-    <input type="text">
+    <input type="text" id="inputBox">
     <br>
     <button type="submit" id="searchBtn">Discover Music</button>
     </header>
   </div>
   <div class="row">
-    <div class="col" id="newsContainer">
-      <h3>LOCAL MUSIC GROUP NEWS</h3>
-      <div id="newsFeed">
-        <p>HEADLINES WILL POPULATE THIS DIV</p>
-      </div>
-    </div>
-    <div class="col" id="eventsContainer">
-      <h3>UPCOMING LIVE EVENTS</h3>
-      <div id="eventsFeed">
-        <p>UPCOMING EVENTS WILL POPULATE THIS DIV</p>
+    <div class="col" id="resultsContainer">
+      <h3 id="artistName"></h3>
+      <div class="row" id="results">
+        <div class="col-4" id="artistImage">
+          <img>
+        </div>
+        <div class="col-8" id="artistInfo">
+        </div>
       </div>
     </div>
   </div>
@@ -60,6 +58,8 @@
     <p>&copy; Copyright</p>
   </footer>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="searchscript.js"></script>
 </body>
 
 </html>
