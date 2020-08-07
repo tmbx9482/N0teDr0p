@@ -1,15 +1,20 @@
 body {
   padding: 0;
   margin: 0;
-  background: burlywood;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background:skyblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-repeat: no-repeat;
 }
 
 /*--- Navigation bar ---*/
 .navbar {
   background: #000000;
-
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow: auto;
+  padding-left: 30px;
+  margin-left: 20px;
+  max-width: inherit;
+ 
 }
 
 .nav-link,
@@ -35,11 +40,16 @@ body {
 }
 
 /*--- Index Page Backround ---*/
+.container-fluid {
+margin: 40px;
+}
 
-.header {
-  background-image: url(NoteDrop.jpg);
+.header { 
+  flex: inherit;
+  /* background-image: url(NoteDrop.jpg); */
+  background-image: url(favicon_note.png);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 65%;
 
 }
 
@@ -48,7 +58,7 @@ body {
 .overlay {
   position: static;
   min-height: 100%;
-  min-width: 100%;
+  min-width: 70%;
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.6);
@@ -57,8 +67,10 @@ body {
 .description {
   left: 50%;
   position: absolute;
-  top: 58%;
+  /* top: 58%; */
+  top: 45%;
   bottom: 20%;
+  height: 100px;
   transform: translate(-50%, -55%);
   text-align: center;
 }
@@ -71,6 +83,7 @@ body {
   color: #fff;
   font-size: 1.3rem;
   line-height: 1.5;
+  text-align: center;
 }
 
 .description button {
@@ -95,18 +108,18 @@ a.btn {
 /*--- Footer Section ---*/
 
 footer {
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-  margin-top: 0px;
-  background-color: black;
-  display: block;
-  margin-left: 0px;
-  margin-right: 0px;
+    position: fixed;
+    bottom: 0px;
+    padding: 20px;
+    width: 100%;
+    height: 80px;
+    padding: 30px; 
+    background-color: black;     
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;    
 }
 
 footer p {
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
   color: blueviolet;
 }
