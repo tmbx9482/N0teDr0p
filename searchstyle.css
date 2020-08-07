@@ -82,6 +82,11 @@ header input {
   text-align: center;
 }
 
+#artistImage{
+  float: left;
+  width: 100%;
+}
+
 footer {
   margin-top: 100px;
   text-align: center;
