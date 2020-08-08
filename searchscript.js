@@ -1,3 +1,4 @@
+//SEARCH BUTTON ON CLICK AJAX FOR GENIUS 
 
 $("#searchBtn").click(function(){
   var artistName = $("#inputBox").val();
@@ -7,6 +8,9 @@ $("#searchBtn").click(function(){
       method: "GET"
   }).then(function(response) {
     console.log(response);
+
+    //POPULATES RESULTS BOX WITH ARTIST NAME AND TOP HITS
+
     var artistName = response.response.hits[0].result.primary_artist.name
     $("#artistName").text(artistName);
     $("#topHits").text("Top 10 Hits");
@@ -31,6 +35,8 @@ $("#searchBtn").click(function(){
     var song10 = response.response.hits[9].result.title_with_featured
     $("#hit10").text("10. " + song10).attr("href", response.response.hits[9].result.url);
 
+    //POPULATES RESULTS BOX WITH ARTIST PICTURE
+
     $("#artistImage").empty();
     var artistPic = response.response.hits[0].result.primary_artist.header_image_url;
     var img = $('<img />', { 
@@ -38,28 +44,36 @@ $("#searchBtn").click(function(){
         src: artistPic,
       });
       img.appendTo($('#artistImage'));
-
-      
     });
-      
-  var queryURL2 = "https://rest.bandsintown.com/artists/"+artistName+"/events?app_id=codingbootcamp";    
-    
-  $.ajax({
+
+    //POPULATES RESULTS BOX WITH BANDSINTOWN UPCOMING EVENTS API   
+
+    var queryURL2 = "https://rest.bandsintown.com/artists/"+artistName+"/events?app_id=codingbootcamp";
+    $.ajax({
         url: queryURL2,
         method: "GET"
     }).then(function(response) {
-      console.log(response)
-      var venue = response[0].venue.name;
-      var venueLocation = response[0].venue.location + ", " + response[0].venue.country;
-      var venueDate = response[0].datetime;
-      venueDate = venueDate.substring(0, response[0].datetime.length - 9);
-      var tickets = (response[0].url);
-      $("#venueUpcoming").text("Upcoming Events");
-      $("#venueDate").text("Date: " + venueDate);
-      $("#venueLocation").text("City: " + venueLocation);
-      $("#venueName").text("Venue: " + venue);
-      $("#venueTickets").text("  Purchase your tickets here.  ").attr("href", tickets);
+      console.log(response);
+      if (response.length > 0){
+        var venue = response[0].venue.name;
+        var venueLocation = response[0].venue.location + ", " + response[0].venue.country;
+        var venueDate = response[0].datetime;
+        venueDate = venueDate.substring(0, response[0].datetime.length - 9);
+        var tickets = (response[0].url);
+        $("#venueUpcoming").text("Upcoming Events");
+        $("#venueDate").text("Date: " + venueDate);
+        $("#venueLocation").text("City: " + venueLocation);
+        $("#venueName").text("Venue: " + venue);
+        $("#venueTickets").text("Purchase your tickets here").attr("href", tickets);
       
+      } else if(response.length < 1) {
+        console.log("No upcoming events");
+        $("#venueUpcoming").text("This Artist has no Upcoming Events");
+        $("#venueDate").text("");
+        $("#venueLocation").text("");
+        $("#venueName").text("");
+        $("#venueTickets").text("");
+      }
     });
   });
   
