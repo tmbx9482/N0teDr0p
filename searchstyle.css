@@ -88,6 +88,24 @@ header input {
   width: 100%;
 }
 
+#topHits {
+  font-weight: bolder;
+  text-decoration: underline
+}
+
+#venueUpcoming {
+  font-weight: bolder;
+  text-decoration: underline
+}
+
+#venueTickets {
+  background-color: #037ffc;
+  color: #ffffff;
+  border: 1px solid;
+  border-style: round;
+  border-radius: 10px;
+}
+
 footer {
   margin-top: 100px;
   text-align: center;

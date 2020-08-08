@@ -6,12 +6,9 @@ $("#searchBtn").click(function(){
       url: queryURL,
       method: "GET"
   }).then(function(response) {
-    var artistName = response.response.hits[0].result.primary_artist.name
-    
-    $("#artistName").text(artistName);
     console.log(response);
-    console.log(response.response.hits[0].result.primary_artist.name);
     var artistName = response.response.hits[0].result.primary_artist.name
+    $("#artistName").text(artistName);
     $("#topHits").text("Top 10 Hits");
     var song1 = (response.response.hits[0].result.title_with_featured);
     $("#hit1").text("1. " + song1).attr("href", response.response.hits[0].result.url);
@@ -56,12 +53,12 @@ $("#searchBtn").click(function(){
       var venueLocation = response[0].venue.location + ", " + response[0].venue.country;
       var venueDate = response[0].datetime;
       venueDate = venueDate.substring(0, response[0].datetime.length - 9);
+      var tickets = (response[0].url);
       $("#venueUpcoming").text("Upcoming Events");
       $("#venueDate").text("Date: " + venueDate);
-      $("#venueName").text("Venue: " + venue);
       $("#venueLocation").text("City: " + venueLocation);
-      var tickets = (response[0].url);
-      $("#venueTickets").text("Purchase your tickets here.").attr("href", tickets);
+      $("#venueName").text("Venue: " + venue);
+      $("#venueTickets").text("  Purchase your tickets here.  ").attr("href", tickets);
       
     });
   });
