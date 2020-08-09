@@ -8,28 +8,28 @@ body {
   margin: 0;
   background:skyblue;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* background-repeat: no-repeat; */
 }
 
 /*--- Navigation bar ---*/
 /* Sets the width and the height of the navbar */
+/* This padding and margin of 0 allows the image to be left aligned */
+.container-body {
+  margin-left: 0;
+  margin-right: 15px;
+  padding-left: 0;
+  padding-right: 15px;
+}
 
 .navbar {
-  /* width: 100%;
-  height:30px ; */
+  float: none;
+    /* clear: both; */
   padding: 15px;
+  overflow: auto;
   display: block;
   text-decoration: none; 
   background: #000000;
-    
 }
 
- img .note {
-  display: inline-flex;
-  /* float: left; */
-  padding: 0;
-  margin: 0;
-}
 /* Set the spacing between the links */
 .navbar-nav ul  {
   margin: 10px;
@@ -50,26 +50,12 @@ ul li a {
   /* padding: 0 20px; */
 }
 
-/* .nav-link,
-.navbar-brand {
-  color: #fff;
-  cursor: pointer;
-} */
-
-/* .nav-link {
-  margin-right: 1em !important;
-  text-align: right;
-  margin: 0;
-  padding: 0px;
-} */
-
+/* As you hover each search link, it changes color */
  a:hover {
-  /* background:blue; */
   background: #8a2be2;
   color:black;
   transition: .10s;
- 
-}
+ }
 
 
 .navbar-collapse {
@@ -79,21 +65,21 @@ ul li a {
 
 /*--- Index Page Backround ---*/
 .container-fluid {
- margin: 40px;
-margin-right: 40px;
+margin-left: 0px;
+margin-right: 0px;
 }
 
 .header { 
   /* flex: inherit; */
-  /* background-image: url(NoteDrop.jpg); */
-   background-image: url(favicon_note.png);
+  /*background-image: url(NoteDrop.jpg);*/
+  background-image: url(favicon_note.png); 
   background-repeat: no-repeat;
   height: 450px; /* this is for the fluid container*/
   background-size: 350px; /* for favicon*/
-  /*background-size: 450px;*/ /* for NoteDrop*/
+  /* background-size: 450px; *//* for NoteDrop*/
   background-position: center;
-  /* position: absolute; */  /* this is for favicon */
-   position: relative;  /* this is for Notedrop */
+  /*position: absolute; */ /* this is for favicon */
+  position: relative;  /* this is for Notedrop */
 }
 
 /*--- Index Page ---*/
@@ -126,19 +112,6 @@ margin-right: 40px;
   text-align: center;
 }
 
-/* .description button {
-  border: 3px solid #000;
-  background: #8a2be2;
-  border-radius: 0;
-  color: #fff;
-}
-
-.description button:hover {
-  border: 3px solid #fff;
-  background: #fff;
-  color: #000;
-} */
-
 a.btn {
   background: #8a2be2;
   color: #000000;
@@ -146,13 +119,13 @@ a.btn {
 
 
 /*--- Footer Section ---*/
-
+/* Fix the footer to the bottom of the page as you scroll down or up */
 footer {
     position: fixed;
     bottom: 0px;
     padding: 20px;
     width: 100%;
-    height: 80px;
+    height: 60px;
     padding: 30px; 
     background-color: black;     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -160,6 +133,5 @@ footer {
 }
 
 footer p {
-  /* margin-bottom: 0px; */
-  color: blueviolet;
+    color: blueviolet;
 }
