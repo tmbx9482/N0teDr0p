@@ -1,0 +1,148 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  height:100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background:skyblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+   
+  /*--- Navigation bar ---*/
+/* Sets the width and the height of the navbar */
+/* This padding and margin of 0 allows the image to be left aligned */
+.navbar {
+  height: auto;
+  padding: 15px;
+  overflow: auto;
+  display: block;
+  text-decoration: none; 
+  background: #000000;
+}
+
+/* .container-body {
+  margin-left: 0;
+  margin-right: 15px;
+  padding-left: 0;
+  padding-right: 15px;
+} */
+
+/************************************************/
+/*  Sets the logo and the test  */
+#logo {
+  vertical-align:middle;
+}
+
+.navbar-brand span {
+	font-size:18px;
+	line-height:20px;
+	font-weight: 200;
+	display:inline-block;
+  vertical-align:middle;
+  padding:0 0 0 15px;
+}
+.navbar-brand {
+  /* display:block; */
+  display:inline-block;
+	font-size:50%;
+	line-height:1;
+}
+.navbar-nav {
+  margin-left:auto;
+}
+/****************************/
+
+/* Set the spacing between the links */
+.navbar-nav ul  {
+  margin: 0px;
+  padding: 10px;
+  }
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  /* padding: 0 20px; */
+}
+
+/* As you hover each search link, it changes color */
+ .nav-item a:hover {
+  background: #8a2be2;
+  color:black;
+  transition: .10s;
+ }
+
+ .display-5 {
+  margin:10px ;
+  padding-top: 10px;
+    /* background-color: #037ffc; */
+  background-color: darkblue;
+  color: #ffffff;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+}
+  
+ /* this is the horizontal rule under the "About Me" Header title*/
+ hr {
+  border-top: 1px solid;
+ margin-top: 10px;
+ margin-bottom: 20px;
+}
+
+/*  Main Body */
+  .col-md-10 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    font-size: large;
+  }
+  
+  .col-md-3 {
+    margin: auto;
+    background-color: #3458eb;
+    text-align: center;
+    color: white;
+  }
+  
+  .row{
+    padding-top: 10px;
+    margin: auto;
+  }
+    
+  /*--- Footer Section ---*/
+/* Fix the footer to the bottom of the page as you scroll down or up */
+footer {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  /* margin-top: 40px;  */
+  background:skyblue;
+  /* background-color: lightgreen;      */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;    
+}
+
+footer p {
+  color: blueviolet;
+}
