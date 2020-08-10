@@ -13,33 +13,61 @@ body {
 /*--- Navigation bar ---*/
 /* Sets the width and the height of the navbar */
 /* This padding and margin of 0 allows the image to be left aligned */
-.container-body {
+
+.navbar {
+  /* float: none; */
+  height: auto;
+  padding: 15px;
+  /* overflow: auto; */
+  display: block;
+  text-decoration: none; 
+
+  background: #000000;
+}
+
+/* .container-body {
   margin-left: 0;
   margin-right: 15px;
   padding-left: 0;
   padding-right: 15px;
+} */
+
+/************************************************/
+/*  Sets the Favicon logo and the text  */
+#logo {
+  vertical-align:middle;
 }
 
-.navbar {
+.navbar-brand span {
   float: none;
-    /* clear: both; */
-  padding: 15px;
-  overflow: auto;
-  display: block;
-  text-decoration: none; 
-  background: #000000;
+	font-size:18px;
+	line-height:20px;
+	font-weight: 200;
+  display:inline-block;
+  vertical-align:middle;
+  padding:0 0 0 15px;
 }
+.navbar-brand {
+  font-size:50%;
+  line-height:1;
+}
+ 
+.navbar-nav {
+  margin-left:auto;
+ 
+}
+/****************************/
 
 /* Set the spacing between the links */
 .navbar-nav ul  {
-  margin: 10px;
+  margin: 0;
   padding: 10px;
   }
 
 ul li {
     list-style: none;
     display: inline-block;
-    line-height: 20px;
+    line-height: 0px;
 }
 
 ul li a {
@@ -51,35 +79,32 @@ ul li a {
 }
 
 /* As you hover each search link, it changes color */
- a:hover {
+ .nav-item a:hover {
   background: #8a2be2;
   color:black;
   transition: .10s;
  }
 
-
 .navbar-collapse {
-  justify-content: flex-end;
+  justify-content: right;
+  /* justify-content: flex-end; */
 
-}
-
+} 
 /*--- Index Page Backround ---*/
 .container-fluid {
-margin-left: 0px;
-margin-right: 0px;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .header { 
-  /* flex: inherit; */
-  /*background-image: url(NoteDrop.jpg);*/
   background-image: url(favicon_note.png); 
   background-repeat: no-repeat;
   height: 450px; /* this is for the fluid container*/
   background-size: 350px; /* for favicon*/
-  /* background-size: 450px; *//* for NoteDrop*/
   background-position: center;
-  /*position: absolute; */ /* this is for favicon */
-  position: relative;  /* this is for Notedrop */
+  position: relative; 
+  background-color: #037ffc; 
 }
 
 /*--- Index Page ---*/
@@ -122,12 +147,12 @@ a.btn {
 /* Fix the footer to the bottom of the page as you scroll down or up */
 footer {
     position: fixed;
-    bottom: 0px;
-    padding: 20px;
+    bottom: 0;
+    padding: 0;
     width: 100%;
-    height: 60px;
-    padding: 30px; 
-    background-color: black;     
+    height: 45px;
+    margin-top: 0; 
+    background-color:lightgreen;     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;    
 }
