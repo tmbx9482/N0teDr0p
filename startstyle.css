@@ -6,7 +6,8 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  background:skyblue;
+  /* background:skyblue; */
+  background: blue;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -90,33 +91,50 @@ ul li a {
   /* justify-content: flex-end; */
 
 } 
-/*--- Index Page Backround ---*/
+/*--- Background Container ---*/
 .container-fluid {
   margin-top: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.header { 
-  background-image: url(favicon_note.png); 
-  background-repeat: no-repeat;
-  height: 450px; /* this is for the fluid container*/
-  background-size: 350px; /* for favicon*/
-  background-position: center;
-  position: relative; 
+  margin-left: 0;
+  margin-right: 0;
   background-color: #037ffc; 
 }
 
-/*--- Index Page ---*/
+/*  Background Container with Music Image */
+.header { 
+  background-image: url(favicon_note.png); 
+  background-repeat: no-repeat;
+  background-size: 350px; /* for favicon*/
+  background-position: center;
+  position: relative; 
+  height: 450px;
+  width: 100%;
+
+}
+
+/*This box overlays the backgroud container*/
 
 .overlay {
-  position: static;
+  /* position: relative; 
   min-height: 100%;
-  min-width: 70%;
-  left: 0;
+  min-width: 70%; 
+  margin:0;  
+  top: 0; */
+ position: fixed;
+ display: none;
+  width: 100%;
+  height: 100%;
   top: 0;
-  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);  
 }
+
+/* header input {
+  width: 30%;
+} */
 
 .description {
   left: 50%;
