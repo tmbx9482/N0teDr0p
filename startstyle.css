@@ -3,11 +3,15 @@ body {
   height: 100%;
 }
 
+
+
 body {
   padding: 0;
   margin: 0;
   /* background:skyblue; */
-  background: blue;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -22,7 +26,6 @@ body {
   /* overflow: auto; */
   display: block;
   text-decoration: none;
-
   background: #000000;
 }
 
@@ -37,6 +40,7 @@ body {
 /*  Sets the Favicon logo and the text  */
 .logo {
   vertical-align: middle;
+
 }
 
 .navbar-brand span {
@@ -96,10 +100,11 @@ ul li a {
 
 /*--- Background Container ---*/
 .container-fluid {
-  margin-top: 20px;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #037ffc;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+
 }
 
 /*  Background Container with Music Image */
@@ -153,7 +158,7 @@ ul li a {
 }
 
 .description p {
-  color: #fff;
+  color: bisque;
   font-size: 1.3rem;
   line-height: 1.5;
   text-align: left;
@@ -181,5 +186,5 @@ footer {
 }
 
 footer p {
-  color: khaki;
+  color: bisque;
 }

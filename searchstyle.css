@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,8 +6,9 @@
   list-style: none;
 }
 
-html, body {
-  height:100%;
+html,
+body {
+  height: 100%;
 }
 
 /*--- Navigation bar ---*/
@@ -19,7 +19,7 @@ html, body {
   padding: 15px;
   overflow: auto;
   display: block;
-  text-decoration: none; 
+  text-decoration: none;
   background: #000000;
 }
 
@@ -33,38 +33,41 @@ html, body {
 /************************************************/
 /*  Sets the logo and the test  */
 #logo {
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .navbar-brand span {
-	font-size:18px;
-	line-height:20px;
-	font-weight: 200;
-	display:inline-block;
-  vertical-align:middle;
-  padding:0 0 0 15px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 200;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 15px;
 }
+
 .navbar-brand {
   /* display:block; */
-  display:inline-block;
-	font-size:50%;
-	line-height:1;
+  display: inline-block;
+  font-size: 50%;
+  line-height: 1;
 }
+
 .navbar-nav {
-  margin-left:auto;
+  margin-left: auto;
 }
+
 /****************************/
 
 /* Set the spacing between the links */
-.navbar-nav ul  {
+.navbar-nav ul {
   margin: 0px;
   padding: 10px;
-  }
+}
 
 ul li {
-    list-style: none;
-    display: inline-block;
-    line-height: 0;
+  list-style: none;
+  display: inline-block;
+  line-height: 0;
 }
 
 ul li a {
@@ -76,11 +79,11 @@ ul li a {
 }
 
 /* As you hover each search link, it changes color */
- .nav-item a:hover {
+.nav-item a:hover {
   background: #8a2be2;
-  color:black;
+  color: black;
   transition: .10s;
- }
+}
 
 /* .navbar {
   background: #000000;
@@ -131,8 +134,9 @@ header input {
 }
 
 h4 {
-  color: rgb(97, 16, 117); 
+  color: rgb(97, 16, 117);
 }
+
 #searchBtn {
   margin-top: 20px;
   padding-top: 20px;
@@ -174,7 +178,7 @@ h4 {
   text-align: center;
 }
 
-#artistImage{
+#artistImage {
   float: left;
   width: 100%;
 }
@@ -205,12 +209,12 @@ footer {
   padding: 0;
   width: 100%;
   height: 45px;
-  margin-top: 0; 
-  background-color:lightgreen;     
+  margin-top: 0;
+  background-color: lightgreen;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center;    
+  text-align: center;
 }
 
 footer p {
-  color: blueviolet;
+  color: bisque;
 }
