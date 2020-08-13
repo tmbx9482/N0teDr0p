@@ -29,21 +29,6 @@ body {
   vertical-align: middle;
 }
 
-.navbar-brand span {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 200;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 0 0 15px;
-}
-
-.navbar-brand {
-  display: inline-block;
-  font-size: 50%;
-  line-height: 1;
-}
-
 .navbar-nav {
   margin-left: auto;
 }
@@ -96,7 +81,7 @@ header input {
 }
 
 h6 {
-  opacity:80%;
+  opacity: 80%;
   color: rgb(97, 16, 117);
 }
 
@@ -191,6 +176,7 @@ footer p {
     font-size: 22px;
     text-align: center;
   }
+
   #artistImage {
     width: 50%;
     flex: 100%;

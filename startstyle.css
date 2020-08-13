@@ -5,93 +5,65 @@ body {
 
 body {
   padding: 0;
-  margin: 0; 
+  margin: 0;
   background-color: #0cbaba;
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /*--- Navigation bar ---*/
-/* .navbar {
+/* Sets the width and the height of the navbar */
+/* This padding and margin of 0 allows the image to be left aligned */
+.navbar {
   height: auto;
   padding: 15px;
+  overflow: auto;
   display: block;
   text-decoration: none;
   background: #000000;
-} */
-
-/* This controls the icon position */
-.navbar {
-  padding: .4rem 1rem;     
-}
-/************************************************/
-/*  Sets the Favicon logo and the text  */
-img .logo {
-  padding-top: 28px;
-  padding-bottom: 28px;
 }
 
-/* .navbar-brand span {
-  float: none;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 200;
-  display: inline-block;
+/*  Sets the logo and the test  */
+#logo {
   vertical-align: middle;
-  padding: 0 0 0 15px;
 }
 
-.navbar-brand {
-  font-size: 50%;
-  line-height: 1;
-} */
 
-/* .navbar-nav {
+.navbar-nav {
   margin-left: auto;
-
-} */
-
-/****************************/
+}
 
 /* Set the spacing between the links */
-/* .navbar-nav ul {
-  margin: 0;
+.navbar-nav ul {
+  margin: 0px;
   padding: 10px;
-} */
-
-.navbar ul{
-  margin-top: 15px;
-  margin-bottom: 15px;  
-  padding-right: 20px;
-  margin-right: 10px;   
-  
 }
 
 ul li {
   list-style: none;
   display: inline-block;
-  /* line-height: 0px; */
+  line-height: 0;
 }
 
 ul li a {
   text-decoration: none;
   font-size: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color:bisque;
- }
+  color: black;
+
+}
 
 /* As you hover each search link, it changes color */
 .nav-item a:hover {
   background: #8a2be2;
-  /* color: black; */
-  color:bisque;
+  color: black;
   transition: .10s;
 }
 
 .navbar-collapse {
-  justify-content: right; 
-
+  justify-content: right;
 }
 
 /*--- Background Container ---*/
@@ -100,7 +72,6 @@ ul li a {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-
 }
 
 /*  Background Container with Music Image */
@@ -113,7 +84,6 @@ ul li a {
   position: relative;
   height: 450px;
   width: 100%;
-
 }
 
 /*This box overlays the backgroud container*/
@@ -149,14 +119,12 @@ ul li a {
   font-size: 1.3rem;
   line-height: 1.5;
   text-align: left;
-
 }
 
 a.btn {
   background: #8a2be2;
   color: #000000;
 }
-
 
 /*--- Footer Section ---*/
 /* Fix the footer to the bottom of the page as you scroll down or up */
@@ -168,7 +136,8 @@ footer {
   height: 45px;
   margin-top: 0;
   background-color: rebeccapurple;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
 
