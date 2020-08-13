@@ -27,3 +27,6 @@ On the Search Page, enter the name of an artist in the text area, for example Ro
 API:
 Genius
 Bandsintown
+
+Screen Shot of our Project!
+![Screenshot (96)](https://user-images.githubusercontent.com/62157127/90165727-190eed00-dd67-11ea-9e11-d942e9741a23.png)
