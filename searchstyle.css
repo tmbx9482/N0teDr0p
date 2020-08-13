@@ -181,3 +181,27 @@ footer {
 footer p {
   color: bisque;
 }
+
+@media only screen and (max-width: 767px) {
+
+  #results {
+    padding: 0px;
+    background-color: #ffffff;
+    color: #037ffc;
+    font-size: 22px;
+    text-align: center;
+  }
+  #artistImage {
+    width: 50%;
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #artistInfo {
+    position: relative;
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: left;
+  }
