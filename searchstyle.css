@@ -23,13 +23,6 @@ body {
   background: #000000;
 }
 
-/* .container-body {
-  margin-left: 0;
-  margin-right: 15px;
-  padding-left: 0;
-  padding-right: 15px;
-} */
-
 /************************************************/
 /*  Sets the logo and the test  */
 #logo {
@@ -46,7 +39,6 @@ body {
 }
 
 .navbar-brand {
-  /* display:block; */
   display: inline-block;
   font-size: 50%;
   line-height: 1;
@@ -75,7 +67,6 @@ ul li a {
   font-size: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
-  /* padding: 0 20px; */
 }
 
 /* As you hover each search link, it changes color */
@@ -85,41 +76,12 @@ ul li a {
   transition: .10s;
 }
 
-/* .navbar {
-  background: #000000;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.nav-link,
-.navbar-brand {
-  color: #fff;
-  cursor: pointer;
-}
-
-.nav-link {
-  margin-right: 1em !important;
-  text-align: right;
-  margin: 0;
-  padding: 0px;
-}
-
-.nav-link:hover {
-  color: #8a2be2;
-}
-
-.navbar-collapse {
-  justify-content: flex-end;
-
-} */
-
 header {
   padding: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* background-color: #037ffc; */
   background-color: rgb(212, 176, 226);
   color: #ffffff;
   text-align: center;
-  /* height: 450px; */
   height: 300px;
   width: 100%;
 }
@@ -154,7 +116,7 @@ h6 {
 
 #resultsContainer {
   width: 35%;
-  margin-left: 50px;
+  margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 10px;

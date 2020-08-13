@@ -30,14 +30,6 @@ body {
   background: #000000;
 }
 
-/* .container-body {
-  margin-left: 0;
-  margin-right: 15px;
-  padding-left: 0;
-  padding-right: 15px;
-} */
-
-/************************************************/
 /*  Sets the logo and the test  */
 #logo {
   vertical-align: middle;
@@ -53,7 +45,6 @@ body {
 }
 
 .navbar-brand {
-  /* display:block; */
   display: inline-block;
   font-size: 50%;
   line-height: 1;
@@ -62,8 +53,6 @@ body {
 .navbar-nav {
   margin-left: auto;
 }
-
-/****************************/
 
 /* Set the spacing between the links */
 .navbar-nav ul {
@@ -82,7 +71,7 @@ ul li a {
   font-size: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
-  /* padding: 0 20px; */
+  
 }
 
 /* As you hover each search link, it changes color */
@@ -95,7 +84,6 @@ ul li a {
 .display-5 {
   margin: 5px;
   padding-top: 5px;
-  /* background-color: #037ffc; */
   background-color: darkblue;
   color: #ffffff;
   text-align: center;
@@ -118,8 +106,10 @@ hr {
   font-size: large;
 }
 
+ /* This section contains the team's images */
 .col-md-3 {
   margin: auto;
+  margin-bottom: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #3458eb;
@@ -132,19 +122,22 @@ hr {
   margin: auto;
 }
 
+/* Adding a border around each picture */
+.images {
+  border: 2px solid lightblue;
+  border-radius: solid 4px;
+}
+
 /*--- Footer Section ---*/
 /* Fix the footer to the bottom of the page as you scroll down or up */
 footer {
-  /* position: fixed; */
   position: sticky;
   bottom: 0;
   padding: 0;
   width: 100%;
   height: 45px;
-  margin-top: 0;
-  /* margin-top: 40px;  */
+  margin-top: 10px;
   background: skyblue;
-  /* background-color: lightgreen;      */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
 }
