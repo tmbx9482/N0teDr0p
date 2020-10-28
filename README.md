@@ -25,8 +25,8 @@ On the Search Page, enter the name of an artist in the text area, for example Ro
 
 
 # API:
-## Genius👓
-## Bandsintown🧠
+* Genius👓
+* Bandsintown🧠
 
 # Project Link ⭐🙌⭐
 [N0teDr0p](https://tmbx9482.github.io/N0teDr0p/)
