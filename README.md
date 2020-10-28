@@ -15,8 +15,7 @@ The user visits our Home Page which has in the top right side of the Navigation 
 In the middle of the page there is a Music Icon and a "Tell me More" Button.  Once the user clicks on the "Tell me More" button, they are directed to the "Search" Page.
 
 
-# Project Information Page💻
-Who We Are!
+# Contributors👨‍🏫
 ![Screenshot (141)](https://user-images.githubusercontent.com/62157127/94503965-af8f5480-01d5-11eb-8393-9a965d69bb81.png)
 
 
@@ -29,6 +28,9 @@ On the Search Page, enter the name of an artist in the text area, for example Ro
 ## Genius👓
 ## Bandsintown🧠
 
-Screen Shot of our Project!
+# Project Link ⭐🙌⭐
+[N0teDr0p](https://tmbx9482.github.io/Project1-N0teDr0p/)
+
+
+# ScreenShot📸
 ![Screenshot (96)](https://user-images.githubusercontent.com/62157127/90165727-190eed00-dd67-11ea-9e11-d942e9741a23.png)
-Project Link ==> https://tmbx9482.github.io/Project1-N0teDr0p/
